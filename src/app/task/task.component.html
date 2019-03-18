@@ -1,0 +1,30 @@
+<div class="task " [ngClass]='{center:center,left:left,right:right}'>
+  <div class="task__delete  left" (click)='deleteTask();showTask()'>
+    <button mat-icon-button matTooltip="delete task">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+  <div class="task__delete-field" (click)='showDeleteButton()'  matTooltip="Left click  to clear a todo."></div>
+  <div class="task__content"  (click)='showTask();'>
+
+
+    <h3>Task</h3>
+
+    <div class="task__content-text" [ngClass]='{popup: popup, overflow:overflow}' (click)='popup=!popup;overflow=!overflow'  >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <div class="task__content-date">
+      <mat-icon>alarm</mat-icon> 21.03.2019
+    </div>
+  </div>
+  <div class="task__complete-field" (click)='showCompleteButton()'matTooltip="Right click  to complete a todo."></div>
+  <div class="task__complete right" (click)='completeTask();showTask()'>
+    <button mat-icon-button matTooltip="complete task">
+      <mat-icon>check</mat-icon>
+    </button>
+  </div>
+</div>

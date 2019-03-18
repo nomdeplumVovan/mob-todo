@@ -1,0 +1,77 @@
+<header>
+  <div class="header">
+    <div class="header__nav">
+      <div class="header__nav-burger">
+        <button type="button" mat-icon-button (click)="drawer.toggle();isShownDrawer=!isShownDrawer " mat-button matTooltip="menu">
+          <mat-icon>menu</mat-icon>
+        </button>
+      </div>
+      <div class="header__nav-h1">
+        <h1>To Day</h1>
+      </div>
+    </div>
+    <div class="header__overflow">
+      <div class="header__overflow-menu">
+        <button mat-icon-button matTooltip="show task">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="menu__sidenav">
+  <div class="menu__sidenav-header">
+
+  </div>
+  <mat-drawer-container class="example-container"
+   [ngClass]='{over:isShownDrawer}'>
+    <mat-drawer #drawer class="example-sidenav" mode="over" >
+
+      <div class="today flex-row">
+        <button mat-button>
+          <mat-icon>calendar_today</mat-icon>
+          To day
+        </button>
+      </div>
+      <div class="toweek flex-row">
+        <button mat-button>
+          <mat-icon>today</mat-icon>
+          To week
+        </button>
+      </div>
+      <div class="anywhen flex-row">
+        <button mat-button>
+          <mat-icon>date_range</mat-icon>
+          Anywhen
+        </button>
+      </div>
+      <div class="completed flex-row">
+        <button mat-button>
+          <mat-icon>event_available</mat-icon>
+          Completed
+        </button>
+      </div>
+      <div class="loose flex-row">
+        <button mat-button>
+          <mat-icon>event_busy</mat-icon>
+          Loose
+        </button>
+      </div>
+      <div class="edit flex-row">
+        <button mat-button>
+          <mat-icon>event_note</mat-icon>
+          Edit
+        </button>
+      </div>
+      <div class="settings flex-row">
+        <button mat-button>
+          <mat-icon>settings</mat-icon>
+          Settings
+        </button>
+      </div>
+    </mat-drawer>
+    <div class="example-sidenav-content">
+        <!-- <app-task></app-task> -->
+    </div>
+  </mat-drawer-container>
+</div>

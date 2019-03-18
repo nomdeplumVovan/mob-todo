@@ -1,0 +1,122 @@
+@import '../../assets/variable.scss';
+
+
+
+header {
+  @extend %flex-column;
+  background-color: $bgcolor;
+  background-color: $secondary;
+  width: 299px;
+  height: 60px;
+  position: fixed;
+  z-index: 10;
+
+  @media screen and(max-width: 426px) {
+    width: 100%;
+  }
+
+  .header {
+    @extend %flex-row;
+    justify-content: space-between;
+    color: $white;
+    box-sizing: border-box;
+    width: 100%;
+
+    padding: 0 10px;
+
+    &__nav {
+      @extend %flex-row;
+
+      &-burger {
+        @extend %flex-column;
+        justify-content: center;
+        width: 40px;
+        height: 60px;
+
+        mat-icon {
+          font-size: 2.4rem;
+          text-align: center;
+        }
+      }
+
+      h1 {
+        font-family: $font-primary;
+        font-size: 2.0rem;
+        height: 24px;
+        margin-left: 10px;
+      }
+    }
+
+    &__overflow {
+      @extend %flex-row;
+      justify-content: flex-end;
+    }
+  }
+
+}
+
+.menu__sidenav {
+  .over {
+    position: relative;;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background-color: $opasity;
+    height: 450px;
+    @media screen and(max-width: 426px) {
+      width: 100%;
+      height: 85vh;
+    }
+  }
+
+  .example-container {
+    display: flex;
+    margin-top: 60px;
+
+    @media screen and(max-width: 426px) {
+      width: 100%;
+      // height: 85vh;
+    }
+
+    .example-sidenav {
+      // background-color: $opasity;
+      // background-color: $primary-hover;
+      background-color: $primary;
+      color: $light-grey;
+      box-sizing: border-box;
+      width: 100%;
+      height: 85vh;
+      padding: 20px;
+
+      div {
+        font-family: $font-primary;
+        font-size: 1.6rem;
+        margin-top: 10px;
+
+        button {
+          @extend %flex-row;
+          justify-content: flex-start;
+          width: 280px;
+
+          &:hover {
+            color: $secondary-hover;
+          }
+
+          @media screen and(max-width: 426px) {
+            width: 100%;
+          }
+
+          mat-icon {
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .flex-row {
+    @extend %flex-row;
+
+  }
+
+}
