@@ -1,0 +1,19 @@
+@import '../../assets/variable.scss';
+
+.edit__footer {
+  @extend %flex-row;
+  justify-content: flex-end;
+  position: fixed;
+  bottom: 12vh;
+  z-index: 100;
+  box-sizing: border-box;
+  width: 299px;
+
+  padding: 0 30px 20px;
+
+  @media screen and(max-width: 426px) {
+    position: fixed;
+    bottom: 5vh;
+    width: 100%;
+  }
+}

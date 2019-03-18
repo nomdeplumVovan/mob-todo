@@ -20,6 +20,7 @@ html {
 
 body {
   @extend %flex-column;
+  font-family: $font-primary;
   background-image: $iphone;
   background-size: contain;
   background-position: center 40px;

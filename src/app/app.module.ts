@@ -21,12 +21,14 @@ import { HeaderComponent } from './header/header.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatListModule} from '@angular/material/list';
 import { TaskComponent } from './task/task.component';
+import { EditComponent } from './edit/edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    TaskComponent
+    TaskComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,

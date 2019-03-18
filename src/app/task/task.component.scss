@@ -3,6 +3,7 @@
 .task {
   @extend %flex-row;
   justify-content: space-between;
+  // font-family: $font-primary;
   position: relative;
   z-index: 5;
   top: center;
@@ -67,7 +68,7 @@
     }
 
     h3 {
-      font-family: $font-secondary;
+      font-family: $font-primary;
       font-size: 1.8rem;
       margin: 5px 0;
     }
