@@ -1,9 +1,27 @@
 <div class="edit">
   <div class="edit__footer">
-  <button mat-mini-fab color="primary" *ngIf='!isCreator' (click)='isCreator=!isCreator; isEdit=false' matTooltip="Add item"  class="edit__footer-add">
-    <mat-icon>
-      add
-    </mat-icon>
-  </button>
+    <button mat-fab color="primary" *ngIf='!isCreator' (click)='isCreator=!isCreator; isEdit=false' matTooltip="Add item"
+      class="edit__footer-add">
+      <mat-icon>
+        add
+      </mat-icon>
+    </button>
+  </div>
 </div>
-</div>
+
+<mat-drawer-container class="example-container" [ngClass]='{over:isCreator}' *ngIf='isCreator'>
+  <mat-drawer #drawer class="example-sidenav" mode="over">
+    <div class="today flex-row">
+      <button mat-button>
+        <mat-icon>calendar_today</mat-icon>
+        To day
+      </button>
+    </div>
+    <div class="toweek flex-row">
+      <button mat-button>
+        <mat-icon>today</mat-icon>
+        To week
+      </button>
+    </div>
+  </mat-drawer>
+</mat-drawer-container>
