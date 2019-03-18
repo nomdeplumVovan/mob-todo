@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./edit.component.scss']
 })
 export class EditComponent implements OnInit {
-
+  isCreator = false;
+  isEdit: Boolean;
   constructor() { }
 
   ngOnInit() {
