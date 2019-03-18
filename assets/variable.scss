@@ -1,0 +1,55 @@
+
+//  =====color =======
+$primary: #EF6C00;
+$primary-hover: #fc831f;
+$secondary: #283593;
+$secondary-hover:#5674b9;
+$header:#0093d7;
+$secondary-header:#00B0FF;
+$white: #ffffff;
+$grey-white: #fefefe;
+$grey: #8d8c8c;
+$green: #007f00;
+$light-grey: #4c4b4b;
+$black: #000000;
+$opasity: #ffffff99;
+$disabled: #d7d7d7;
+$error:#f44336;
+
+// ====bg-color===
+$bgcolor: $secondary-header;
+$bg-primary:#FFE0B2;
+$bg-secondary:#ECEFF1;
+$bg-primary-hover:#fc831f33;
+$bg-img:#0000000d;
+
+// =====fonts=====
+$font-primary: 'Source Sans Pro',
+sans-serif;
+$font-secondary: 'Overpass',
+sans-serif;
+$font-third:'PT Sans',
+sans-serif;
+
+// =====bg-image===
+$iphone: url('./assets/image/Iphone6+.svg');
+
+//  === direction =======
+%flex-row {
+  display: flex;
+  align-items: center;
+}
+
+%flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+%overflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
