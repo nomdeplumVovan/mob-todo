@@ -13,7 +13,7 @@
   width: 519px;
   min-height: 80px;
 
-  @media screen and(max-width: 426px) {
+  @media screen and(max-width: 768px) {
     width: calc(100vw + 220px);
   }
 
@@ -50,14 +50,15 @@
     min-height: 80px;
     width: 239px;
 
-    @media screen and(max-width: 426px) {
+    @media screen and(max-width: 768px) {
       width: 86vw;
     }
 
     &-text {
       font-size: 1.6rem;
       cursor: pointer;
-      &:hover{
+
+      &:hover {
         color: $primary;
       }
     }
@@ -77,18 +78,19 @@
       @extend %overflow;
     }
 
-    // .popup {
-    //   position: absolute;
-    //   z-index: 25;
-    //   left: center;
-    //   top: center;
-    //   width: 95vw;
-    //   min-height: 90vh;
-    // }
+    .popup {
+      position: absolute;
+      z-index: 95;
+      // left: 0;
+      // top: 0;
+      background-color: $secondary-hover;
+      width: 100vw;
+      height: 100vh;
+    }
 
     mat-icon {
       margin: 5px 5px 5px 0;
-      
+
     }
   }
 }
